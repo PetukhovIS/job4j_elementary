@@ -13,6 +13,6 @@ public class Games {
         permission(true, true);
         permission(true, false);
         permission(false, true);
-        Games.permission(false, false);
+        permission(false, false);
     }
 }
