@@ -20,7 +20,7 @@ class CounterTest {
     }
 
     @Test
-    void whenStart4Finish5Then5() {
+    void whenStart4Finish8Then30() {
         int result = Counter.sum(4, 8);
         int expected = 30;
         assertThat(result).isEqualTo(expected);
