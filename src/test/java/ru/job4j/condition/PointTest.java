@@ -41,4 +41,13 @@ class PointTest {
         double distance = a.distance(b);
         assertThat(distance).isEqualTo(expected, withPrecision(0.01));
     }
+
+    @Test
+    void when565to728then5dot38() {
+        Point a = new Point(5, 6, 5);
+        Point b = new Point(7, 2, 8);
+        double expected = 5.38;
+        double output = a.distance3d(b);
+        assertThat(output).isEqualTo(expected, withPrecision(0.01));
+    }
 }
